@@ -1,0 +1,85 @@
+/* These CSS rules apply to the <html>, <body>, and <div id="app"> HTML elements in index.html */
+html, body, #app {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Frijole', cursive;
+  font-style: normal;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Continue building out the CSS styling for your Twiddler app below! We got you started by
+providing a space for you to apply styles to your app's outermost HTML element - the #app itself. */
+
+body {
+  --twiddler-background: #e6ecf0;
+}
+#app {
+  background-color: #16003B;
+  color: gray;
+}
+
+#update-feed {
+  background-color: gray;
+  padding: 10px;
+  margin: 10px;
+}
+
+#feed {
+flex: 0.5;
+min-width: fit-content;
+width: 70%;
+margin: 10px;
+overflow-y: scroll;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+  border-bottom: 1px solid var(--twiddler-background);
+  padding: 10px;
+}
+.message {
+  margin-top: 10px;
+}
+
+.tweetHeader {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  margin: 10px;
+}
+
+.tweet_footer {
+  display: flex;
+  flex-grow: 3;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.timestamp {
+  font-size: small;
+  font-weight: 100;
+  text-align: end;
+  width: 30%;
+}
+
+.icon:hover {
+  color: gray;
+  position: static;
+  cursor: pointer;
+}
